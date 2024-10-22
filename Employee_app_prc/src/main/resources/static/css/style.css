@@ -1,0 +1,93 @@
+
+
+form {
+    padding: 15px;
+}
+
+/* Media Query for small devices (max-width: 575.98px) */
+@media (max-width: 575.98px) {
+    /* Stack form fields vertically on small screens */
+    .form-group {
+        display: block;
+        width: 100%;
+    }
+
+    .form-group label {
+        width: 100%;
+        text-align: left;
+    }
+
+    .form-group input, 
+    .form-group select {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .btn {
+        width: 100%; /* Full-width button on small screens */
+    }
+}
+
+/* Media Query for medium devices (tablets, 576px to 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* Adjust padding for medium devices */
+    form {
+        padding: 20px;
+    }
+
+    .btn {
+        width: auto; /* Default button width on tablets */
+    }
+}
+
+/* Base table styles */
+table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+/* Media Query for small devices (max-width: 575.98px) */
+@media (max-width: 575.98px) {
+    /* Make table scrollable on small screens */
+    .table-responsive {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    table thead {
+        display: none; /* Hide table headers on small screens */
+    }
+
+    table tbody td {
+        display: block;
+        text-align: right;
+        border-bottom: 1px solid #ddd;
+    }
+
+    table tbody td::before {
+        content: attr(data-label); /* Use data-label attribute for headers */
+        float: left;
+        font-weight: bold;
+    }
+
+    table tbody tr {
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    /* Adjust font size and padding */
+    table td {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+/* Media Query for medium devices (tablets, 576px to 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* Tablet-specific styles (if needed) */
+    table td {
+        padding: 15px;
+    }
+}
